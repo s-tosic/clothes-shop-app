@@ -1,0 +1,9 @@
+<h2>Completed Orders</h2>
+<div *ngFor="let order of completedOrders">
+  <p>{{ order.product.name }} - {{ order.quantity }} pcs for {{ order.product.price | currency }}</p>
+  <div>
+    <button *ngFor="let num of [1, 2, 3, 4, 5]" (click)="onRate(order.product, num)">
+      Rate {{ num }}
+    </button>
+  </div>
+</div>

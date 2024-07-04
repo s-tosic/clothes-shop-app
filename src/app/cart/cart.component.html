@@ -1,0 +1,8 @@
+@for(item of cartItems; track $index) {
+  <div>
+    <div>{{ item.product.name }} - {{ item.quantity }}</div>
+    <img [src]="item.product.src" alt="{{ item.product.name }}">
+    <button (click)="removeFromCart(item.product.id)">Remove</button>
+  </div>
+}
+<button (click)="openCheckoutDialog()">Checkout</button>

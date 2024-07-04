@@ -1,0 +1,20 @@
+nav {
+    background-color: #333; /* Dark grey background */
+    padding: 10px; /* Padding around the links */
+    display: flex; /* Aligns the links horizontally */
+    gap: 20px; /* Adds space between each link/button */
+}
+
+nav a, nav button {
+    background-color: #555; /* Slightly lighter grey for buttons */
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 15px; /* Padding inside each link/button */
+    border: none; /* No borders for a button-like appearance */
+    border-radius: 5px; /* Rounded corners for button-like appearance */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover, nav button:hover {
+    background-color: #777; /* Change background on hover */
+}

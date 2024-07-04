@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* General body styling */
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Container for all content, providing consistent margin */
+.container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically (optional) */
+    height: 100vh; /* Optional: Makes the container take the full viewport height */
+    margin: 0 auto; /* Centering the container */
+    padding: 0 10%; /* Adds gaps on both sides */
+}
+
+
+/* Basic styling for headers */
+h1, h2, h3 {
+    color: #444;
+}
+
+/* Style for primary buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
