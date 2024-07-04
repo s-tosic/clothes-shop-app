@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": "9e18",
+      "username": "a",
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "phone": "",
+      "email": "a",
+      "password": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "cart": []
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "T-Shirt",
+      "price": 29.99,
+      "src": "assets/img/1.png"
+    },
+    {
+      "id": "2",
+      "name": "Jeans",
+      "price": 49.99,
+      "src": "assets/img/2.png"
+    },
+    {
+      "id": "3",
+      "name": "Hoodie",
+      "price": 39.99,
+      "src": "assets/img/3.png"
+    },
+    {
+      "id": "4",
+      "name": "Dress",
+      "price": 69.99,
+      "src": "assets/img/4.png"
+    },
+    {
+      "id": "5",
+      "name": "Skirt",
+      "price": 39.99,
+      "src": "assets/img/5.png"
+    },
+    {
+      "id": "6",
+      "name": "Polo Shirt",
+      "price": 34.99,
+      "src": "assets/img/6.png"
+    },
+    {
+      "id": "7",
+      "name": "Blouse",
+      "price": 39.99,
+      "src": "assets/img/7.png"
+    },
+    {
+      "id": "8",
+      "name": "Cardigan",
+      "price": 49.99,
+      "src": "assets/img/8.png"
+    },
+    {
+      "id": "9",
+      "name": "Blazer",
+      "price": 59.99,
+      "src": "assets/img/9.png"
+    },
+    {
+      "id": "10",
+      "name": "Sweater",
+      "price": 44.99,
+      "src": "assets/img/10.png"
+    }
+  ],
+  "cartItems": []
+}
