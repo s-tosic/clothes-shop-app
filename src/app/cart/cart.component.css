@@ -1,0 +1,25 @@
+/* cart.component.css */
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px;
+  }
+  
+  .cart-item {
+    flex: 1 1 calc(50% - 32px); /* Two items per row with spacing */
+    box-sizing: border-box;
+    margin: 16px;
+  }
+  
+  mat-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  mat-card img {
+    object-fit: contain;
+  }
+  

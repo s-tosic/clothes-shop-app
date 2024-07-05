@@ -5,19 +5,54 @@ import { sha256 } from 'js-sha256';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { User } from '../models/user';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   template: `
-    <h2>Login</h2>
-    <form (submit)="login()">
-      <input type="email" [(ngModel)]="user.email" name="email" placeholder="Email" required>
-      <input type="password" [(ngModel)]="user.password" name="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form (submit)="login()">
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" [(ngModel)]="user.email" name="email" placeholder="Email" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [(ngModel)]="user.password" name="password" placeholder="Password" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+    </div>
   `,
-  imports: [RouterModule, FormsModule]
+  imports: [RouterModule, FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule],
+  styles: [`
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    mat-form-field {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    button {
+      width: 100%;
+    }
+  `]
 })
 export class LoginComponent {
   user: User = { 
